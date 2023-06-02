@@ -1,0 +1,14 @@
+extends layout.pug 
+
+block content 
+    
+    div.container 
+        h1   All Products
+
+        each product in products 
+            div.product-wrapper 
+                a.product(href=`products/${ product.id }`) #{ product.title } 
+                a.update(href=`/${ product.id }/Update`) Update 
+                a.delete(href=`/${ product.id }/delete`) Delete 
+                
+                

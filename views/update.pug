@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1 Update Product
+
+  if error
+    p(class='error') Error: Title and description cannot be empty.
+
+  form(action=`/products/${product.id}/update`, method='POST')
+    div
+      label(for='title') Title:
+      input(type='text', name='title', id='title', value=product.title)
+
+    div
+      label(for='description') Description:
+      textarea(name='description', id='description')= product.description
+
+    button(type='submit') Update Product

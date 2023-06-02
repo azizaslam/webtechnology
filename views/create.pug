@@ -1,0 +1,19 @@
+extends layout.pug 
+block content 
+    div.container 
+        h1 Create new Products 
+
+        if error 
+            p.error Please add  product! 
+
+        if done  
+            p.done  Product is created succesfully!
+
+        form(action="/create" method='POST') 
+            label Title
+            input.input(type="text" name='title') 
+            label Description 
+            textarea.input(type="text" name='description') 
+            button.btn Create new product 
+
+

@@ -1,0 +1,207 @@
+:root {
+    font-size: 18px;
+    color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    color: rgb(3, 3, 255);
+}
+
+.navbar,
+.nav {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px dotted white;
+    padding: 10px;
+}
+.nav {
+    margin-right: 0;
+}
+
+/* home styeles */
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.intro-mes {
+    padding: 50px 0 30px 0;
+    font-size: 2rem;
+    max-width: 50%;
+    text-align: center;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-top: 70px;
+    border-radius: 5px;
+}
+
+.featured {
+    display: inline-block;
+    border-radius: 5px;
+    padding: 15px 20px;
+    background: blue;
+    color: rgb(255, 255, 255);
+}
+.featured:hover {
+    color: rgb(255, 255, 255);
+    background: rgb(3, 3, 124);
+    transition: 0.5s;
+}
+/* create */
+
+.form {
+    max-width: 60%;
+}
+
+
+.input {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    font-size: 1.3rem;
+    font-family: inherit;
+    border: 1px solid rgb(0, 0, 0);
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.btn {
+    display: inline-block;
+    background: blue;
+    color: white;
+    font-size: 1.3rem;
+    border: none;
+    padding: 10px 20px;
+    font-family: inherit;
+    border-radius: 5px;
+}
+.btn:hover{
+    background: rgb(3, 3, 124);
+    color: white;
+    font-size: 1.3rem;
+    transition: 0.5s;
+}
+
+/* task list */
+
+.product-wrapper {
+    max-width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+
+.task {
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+
+
+.delete {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid black;
+    background: red;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+}
+.delete:hover{
+    color: rgb(255, 255, 255);
+    background: rgb(214, 11, 11);
+    transition: 0.5s;
+}
+.error {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid red;
+    font-size: 1.2rem;
+    color: red;
+    border-radius: 5px;
+}
+
+.done {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid green;
+    font-size: 1.2rem;
+    margin: 20px;
+    color: rgb(255, 255, 255);
+    background: rgb(8, 151, 8);
+    border-radius: 5px;
+}
+
+.title {
+    text-align: center;
+    border: 1.5px solid black;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.description {
+    text-align: center;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.update{
+    display: flex;
+    padding: 5px 10px;
+    border: 1px solid black;
+    background: rgb(68, 214, 11);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-right: -60%;
+    
+}
+.update:hover{
+    color: rgb(255, 255, 255);
+    background: rgb(60, 172, 16);
+    transition: 0.5s;
+}
+
+.updating{
+    padding: 5px 10px;
+    border: 1px solid black;
+    background: rgb(68, 214, 11);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-right: -60%;
+    
+}
+.updating:hover{
+    color: rgb(255, 255, 255);
+    background: rgb(60, 172, 16);
+    transition: 0.5s;
+}
+.topic {
+    text-align: center;
+    margin-bottom: 20px;
+}
